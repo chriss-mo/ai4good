@@ -7,8 +7,62 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split, cross_val_score
 from xgboost import XGBClassifier
 import spacy
+import re
+import spacy
 
-nlp = spacy.load("en_core_web_md")
+nlp = spacy.load("en_core_web_md", disable=["parser", "ner"])
+
+def clean_text(text):
+    if pd.isna(text):
+        return ""
+    text = text.lower()
+    text = re.sub(r"http\S+", "", text)  # remove URLs
+    text = re.sub(r"[^a-zA-Z0-9\s]", "", text)  # remove punctuation
+    text = re.sub(r"\s+", " ", text).strip()  # remove extra spaces
+    doc = nlp(text)
+    tokens = [token.lemma_ for token in doc if not token.is_stop]
+    return " ".join(tokens)
+
+nlp2 = spacy.load("en_core_web_md")
+
+def split_topics(topics):
+    if pd.isna(topics): 
+        return []
+    return [t.strip() for t in topics.split(',')]
+
+def open_data(path):
+    df = pd.read_csv(path, sep='\t', header=None)
+    df.columns =['index','id', 'label', 'statement', 'subject', 'speaker', 'speaker_job_title', 'state_info', 'party_affiliation', 'barely_true_counts', 'false_counts', 'half_true_counts', 'mostly_true_counts', 'pants_on_fire_counts', 'context','justification']
+    df.drop(columns=['index'], inplace=True)
+    party_map = {
+        'republican': 'right-leaning',
+        'democrat': 'left-leaning',
+        'libertarian': 'right-leaning',
+        'tea-party-member': 'right-leaning',
+        'ocean-state-tea-party-action': 'right-leaning',
+        'constitution-party': 'right-leaning',
+        'democratic-farmer-labor': 'left-leaning',
+        'green': 'left-leaning',
+        'labor-leader': 'left-leaning',
+        'liberal-party-canada': 'centrist',
+        'Moderate': 'centrist',
+        'independent': 'centrist',
+        'none': 'other',
+        'organization': 'other',
+        'columnist': 'other',
+        'activist': 'other',
+        'talk-show-host': 'other',
+        'newsmaker': 'other',
+        'journalist': 'other',
+        'state-official': 'other',
+        'business-leader': 'other',
+        'education-official': 'other',
+        'government-body': 'other'
+    }
+    df['party_category'] = df['party_affiliation'].map(party_map).fillna('other')
+    df['word_count'] = df['statement'].apply(lambda x: len(x.split()) if pd.notnull(x) else 0)
+    df['topic_list'] = df['subject'].apply(split_topics)
+    return df
 
 def add_sentiment_scores(df, text_col='statement'):
     """Add compound sentiment scores using VADER."""
@@ -20,7 +74,7 @@ def add_sentiment_scores(df, text_col='statement'):
 
 def match_counter(statement, bigram_list, threshold=70):
     """Count how many fuzzy-matched bigrams appear in a statement."""
-    stat = nlp(str(statement))
+    stat = nlp2(str(statement))
     words = [token.text.lower() for token in stat]
     bigrams = [''.join(words[i:i+2]) for i in range(len(words) - 1)]
 
@@ -103,7 +157,9 @@ def train_and_evaluate(X, y, n_classes, cv=5):
     print(f"Cross-validated accuracy ({cv}-fold): {scores.mean():.4f}")
     return model, scores
 
-def full_pipeline(df):
+def full_pipeline(df, clean = True):
+    if clean:
+        df['statement'] = df['statement'].apply(clean_text)
     df = add_sentiment_scores(df)
     df = add_bigram_features(df)
     df = add_embeddings(df)
