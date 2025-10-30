@@ -1,0 +1,28 @@
+# ----------------------------
+# Python cache and build files
+# ----------------------------
+__pycache__/
+
+# ----------------------------
+# Project-specific exclusions
+# ----------------------------
+bert_finetuned_liar_plus/
+req.txt
+best_liar_textcnn.pt 
+best_residual_mlp.pt
+clean_articles.parquet 
+articles/
+
+checkpoints/
+
+
+# ----------------------------
+# Environment and IDE files
+# ----------------------------
+.env
+.venv/
+venv/
+.env/
+.ipynb_checkpoints/
+.DS_Store
+*.log
