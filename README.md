@@ -10,7 +10,7 @@ In this project, we develop AI/ML enabled ways to detect misinformation in textu
 We then use these factuality factors in tandem to predict the Politifact truth label of a statement.  
 
 ## Requirements  
-To reproduce the code, you will need to install the python packages in `req.txt` by running:  
+To reproduce the code, you will need to install the python packages in `req.txt` by changing directories to this repository and running in your terminal:  
 `pip install -r req.txt`  
 **Note:** This is assuming you do not have a CUDA runtime installed. To install the CUDA-compatible versions, uninstall PyTorch and install the version corresponding to your CUDA version on PyTorch's website
 
