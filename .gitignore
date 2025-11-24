@@ -7,7 +7,7 @@ __pycache__/
 # Project-specific exclusions
 # ----------------------------
 bert_finetuned_liar_plus/
-req.txt
+archive/
 best_liar_textcnn.pt 
 best_residual_mlp.pt
 clean_articles.parquet 
@@ -26,3 +26,4 @@ venv/
 .ipynb_checkpoints/
 .DS_Store
 *.log
+config.yaml
