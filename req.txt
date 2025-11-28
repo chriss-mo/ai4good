@@ -1,0 +1,21 @@
+transformers==4.57.1
+torch==2.8.0
+torchaudio==2.8.0
+torchvision==0.23.0
+
+scikit-learn==1.5.0
+xgboost==3.0.5
+numpy==2.3.4
+pandas==2.3.3
+
+spacy==3.8.7
+en_core_web_md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl
+
+sentence-transformers==5.1.1
+rapidfuzz==3.14.1
+vaderSentiment==3.3.2
+
+google-genai==1.50.1
+PyYAML==6.0.3
+regex==2025.9.18
+requests==2.32.5
