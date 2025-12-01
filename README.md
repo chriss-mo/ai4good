@@ -25,7 +25,7 @@ ai4good│
 │        └───rxavierlabeled_articles.csv
 │        └───polifact.csv
 │        └───test.pdf                         <- example PDF for our rag model
-│        └───top_conservative_bigrams.csv     <- scraped bigrams from Stanford Libraries (https://data.stanford.edu/congress_text)
+│        └───top_conservative_bigrams.csv     <- scraped bigrams from all text spoken on the floor of the Senate and the House of Representatitves along with speaker party (https://data.stanford.edu/congress_text)
 │        └───top_liberal_bigrams.csv
 │        
 └─── notebooks             <- folder that holds our notebooks for training and running models
