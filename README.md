@@ -49,10 +49,17 @@ ai4good│
 
 ```
 
+## Features
+* **Statistical Article Vector:** Generates quantifiable statistics for any news article based on the factuality factors, including popular political phrase matching, sentiment scoring, and BERT predictions
+* **Generative AI Analysis:** Utilizes a highly specialized and refined prompt to allow an LLM to deeply analyze the article based on the factuality factors and work in tandem with the statistical article vector.
+* **Intuitive Website Interface:** Easy-to-use website interface that allows you to copy and paste any text to analyze.
+
 ## Requirements  
 To reproduce the code, you will need to install the python packages in `req.txt` by changing directories to this repository and running in your terminal:  
 ```
   pip install -r req.txt
 ```  
 **Note:** This is assuming you do not have a CUDA runtime installed, and will only utilize the CPU for computations. To install the CUDA-compatible versions, uninstall PyTorch and install the version corresponding to your CUDA version on [PyTorch's website](https://pytorch.org/get-started/locally/)
+
+
 
