@@ -10,8 +10,10 @@ pandas==2.3.3
 matplotlib==3.10.7
 wordcloud==1.9.4
 seaborn==0.13.2
-bs4==4.14.2
+beautifulsoup4
 newspaper3k==0.2.8
+lxml>=5.0.0
+lxml_html_clean
 
 spacy==3.8.7
 en_core_web_md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl
@@ -29,3 +31,6 @@ requests==2.32.5
 
 gradio==5.49.1
 gradio_client==1.13.3
+
+chromadb
+pypdf
