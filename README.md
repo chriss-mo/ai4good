@@ -59,7 +59,7 @@ To reproduce the code, you will need to install the python packages in `req.txt`
 ```
   pip install -r req.txt
 ```  
-**Note:** This is assuming you do not have a CUDA runtime installed, and will only utilize the CPU for computations. To install the CUDA-compatible versions, uninstall PyTorch and install the version corresponding to your CUDA version on [PyTorch's website](https://pytorch.org/get-started/locally/)
+**Note:** This is assuming you do not have a CUDA runtime installed, and will only utilize the CPU for computations. To install the CUDA-compatible versions, uninstall PyTorch and install the version corresponding to your CUDA version on [PyTorch's website](https://pytorch.org/get-started/locally/)  
 
-
+You'll also need to download [this pretrained model]([https://drive.google.com/file/d/1TE7gZblTT_pIVPH00dKf4-SrObbIcKV0/view?usp=sharing) and have it in a folder called "checkpoints"
 
