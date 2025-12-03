@@ -12,7 +12,7 @@ best_liar_textcnn.pt
 best_residual_mlp.pt
 clean_articles.parquet 
 articles/
-
+notebooks/catboost_info/
 checkpoints/
 
 
