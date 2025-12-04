@@ -85,3 +85,7 @@ nautilus:
   api: "<your API key here>"
 ```
 
+## Running the Web Application
+* After installing all necessary packages, navigate to `notebooks/webpage_runner.ipynb`
+* Run all cells
+* In the last cell, a local link will appear. Follow the link to get to the demo website and paste an article in!
