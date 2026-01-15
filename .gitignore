@@ -15,6 +15,11 @@ articles/
 notebooks/catboost_info/
 checkpoints/
 
+# ----------------------------
+# Agent Testing Folders
+# ----------------------------
+agent_test
+notebooks/adktest.ipynb
 
 # ----------------------------
 # Environment and IDE files
