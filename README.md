@@ -52,6 +52,12 @@ ai4good│
 │        └───ingestor_utils.py                <- Function store for methods outlined in ingestor.ipynb. Use in full pipeline/unseen data applications
 │        └───mxnet_utils.py                   <- Function/class store for common functions used in the MXNet training and evaluation workflow
 │ 
+│        
+└─── (checkpoints)         <- folder that holds our pretrained model
+│        │ 
+│        └───best.pth                         <- Pretrained MXNet model (too large to include in Github)
+│
+└───(.config.yaml)         <- stores gemini and nautilus API keys (described below)
 └───.gitignore
 └───req.txt
 └───README.md
@@ -70,5 +76,16 @@ To reproduce the code, you will need to install the python packages in `req.txt`
 ```  
 **Note:** This is assuming you do not have a CUDA runtime installed, and will only utilize the CPU for computations. To install the CUDA-compatible versions, uninstall PyTorch and install the version corresponding to your CUDA version on [PyTorch's website](https://pytorch.org/get-started/locally/)  
 
-You'll also need to download [this pretrained model](https://drive.google.com/file/d/1TE7gZblTT_pIVPH00dKf4-SrObbIcKV0/view?usp=sharing) and have it in a folder called "checkpoints." This was not included in our repository due to its size, and it would be necessary to include this fodler in your `.gitignore`
+You'll also need to download [this pretrained model](https://drive.google.com/file/d/1TE7gZblTT_pIVPH00dKf4-SrObbIcKV0/view?usp=sharing) and have it in a folder called "checkpoints." This was not included in our repository due to its size, and it would be necessary to include this folder in your `.gitignore`. Additionally, you would need a `config.yaml` file included in the main repository that follows this structure:  
+```
+gemini:
+  api: "<your API key here>"
 
+nautilus:
+  api: "<your API key here>"
+```
+
+## Running the Web Application
+* After installing all necessary packages, navigate to `notebooks/webpage_runner.ipynb`
+* Run all cells
+* In the last cell, a local link will appear. Follow the link to get to the demo website and paste an article in!
