@@ -1,0 +1,4 @@
+Prompt,Authenticity,Sensationalism,Political Bias,Spam,Confirmation Bias,Short-Term Utility
+Naive,0.1,0.2,0.1,0.3,0.2,0.0
+Refined,0.2,0.2,0.3,0.3,0.2,0.1
+Final,0.1,0.3,0.3,0.4,0.0,0.2
