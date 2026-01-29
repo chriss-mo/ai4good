@@ -1,5 +1,5 @@
 ,Prompt,Authenticity,Sensationalism,Political Bias,Spam,Confirmation Bias,Short-Term Utility,description,full_prompt
-0,Naive,0.1,0.2,0.1,0.3,0.2,0.0,"Standard prompt for our task at hand, giving minimal details for the LLM to work with","
+0,Naive,0.7,0.5,0.5,0.4,0.2,0.1,"Standard prompt for our task at hand, giving minimal details for the LLM to work with","
 You are an AI tasked with scoring news articles. 
 
 For the following article, assign numeric scores from 1 to 10 for each of these six factors: 
@@ -16,7 +16,7 @@ Do not provide explanations, examples, or comments. Only output a Python diction
 Article:
 <article>
 "
-1,Refined,0.2,0.2,0.3,0.3,0.2,0.1,Standard prompt + scoring recipes for the LLM to use and evaluate,"
+1,Refined,0.8,0.3,0.5,0.4,0.3,0.4,Standard prompt + scoring recipes for the LLM to use and evaluate,"
 You are an AI assistant assigned to evaluate the factuality of news statements using a generative fact-checking pipeline.
 Your task is to analyze article text, incorporate predictive model outputs WITHOUT overweighting them, and compute factor scores using the scoring recipes below.
 
@@ -91,7 +91,7 @@ ARTICLE TEXT:
 PREDICTIVE MODEL FEATURE VECTOR:
 [<predictive model output>]
 "
-2,Final,0.1,0.3,0.3,0.4,0.0,0.2,Standard prompt + scoring recipes and example outputs (in-context learning) for best possible results,"You are an AI assistant assigned to evaluate the factuality of news statements using a generative fact-checking pipeline.
+2,Final,0.7,0.4,0.5,0.5,0.3,0.6,Standard prompt + scoring recipes and example outputs (in-context learning) for best possible results,"You are an AI assistant assigned to evaluate the factuality of news statements using a generative fact-checking pipeline.
 
 Your task is to analyze article text, incorporate predictive model outputs WITHOUT overweighting them, and compute factor scores using the scoring recipes below.
 
