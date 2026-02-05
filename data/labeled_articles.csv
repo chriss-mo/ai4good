@@ -1,5 +1,5 @@
-id,text,authenticity_score,sensationalism_score,political_bias_score,toxicity_score,confirmation_bias_score,short_term_utility_score
-1,"NEW YORK, NY — Mayor-elect Zohran Mamdani announced plans on Thursday to specifically target the rich with a new tax on anyone who makes more than $0.00 a year.
+,id,text,authenticity_score,sensationalism_score,political_bias_score,spam_score,confirmation_bias_score,short_term_utility_score
+0,1,"NEW YORK, NY — Mayor-elect Zohran Mamdani announced plans on Thursday to specifically target the rich with a new tax on anyone who makes more than $0.00 a year.
 
 The plan, dubbed the ""How Much You Got?"" Tax, was expected to go into effect in January after Mamdani officially takes office. He has called the tax a day-one initiative, claiming his bread lines would be a disaster without the increased revenue from taking all of everyone's money.
 
@@ -12,7 +12,7 @@ Officially, Mamdani has no authority to raise taxes in the city (other than prop
 For their part, New York City citizens overwhelmingly supported Mamdani taking all their money with a dramatic 100% tax rate. ""What am I going to do with my money, be independent and free?"" asked local New Yorker Seth Meyers. ""That's silly.""
 
 At publishing time, President Donald Trump had called out Mayor-elect Mamdani for his destructive plan and offered to host him at the White House on Friday to discuss it because he's a huge Islamophobe.",2,7,5,9,3,8
-2,"Walmart is proving to be America’s antidote to the cost of living crisis.
+1,2,"Walmart is proving to be America’s antidote to the cost of living crisis.
 
 A growing number of Americans are heading to Walmart for groceries and clothing as inflation and high prices squeeze their budgets: Walmart’s business in the United States is surging and it’s gaining market share from rivals, the company said Thursday in its quarterly financial report.
 
@@ -39,12 +39,12 @@ Shoppers make frequent trips to stores to pick up groceries, and Walmart has mad
 As shoppers tighten their spending, more are choosing Walmart over Target.
 
 Walmart has also peeled off lower-income customers from Dollar General and other discount stores.",7,5,2,1,5,3
-3,"LAS VEGAS—Shaking his head in frustration after staff pulled yet another wriggling cottontail from the canvas mat, UFC president Dana White expressed disbelief Friday that rabbits were still somehow managing to get beneath the Octagon fence.
+2,3,"LAS VEGAS—Shaking his head in frustration after staff pulled yet another wriggling cottontail from the canvas mat, UFC president Dana White expressed disbelief Friday that rabbits were still somehow managing to get beneath the Octagon fence.
 
 “We’ve tried everything—chicken wire, garlic spray, motion-triggered sprinklers—but the little bastards just keep scratching their way under there,” said White, gesturing to a UFC official attempting to lure out a pair of bunnies with a celery stick just moments before the start of a welterweight bout. “Every time we think we’ve sealed up all the gaps, nope—there’s another goddamn rabbit chewing on a cutman’s rag, or a pile of rabbit turds under [Kamaru] Usman’s stool. They’re cute, but man, they’re distracting. And they reproduce like crazy.”
 
 At press time, White was reportedly on the phone with a pest control company to see if they could “come out and spray some chemicals or put up an electric dog fence or something.”",1,9,2,5,8,10
-4,"Nov 20 (Reuters) - Studies from Novo Nordisk (NOVOb.CO) due early next month will give the strongest indication yet of whether blockbuster GLP-1 drugs—a class being used by millions for diabetes and weight loss—can slow progress of Alzheimer's disease.
+3,4,"Nov 20 (Reuters) - Studies from Novo Nordisk (NOVOb.CO) due early next month will give the strongest indication yet of whether blockbuster GLP-1 drugs—a class being used by millions for diabetes and weight loss—can slow progress of Alzheimer's disease.
 
 Two trials, described by Novo as a ""lottery ticket,"" are testing its older diabetes pill Rybelsus that has the same active ingredient—semaglutide—as Ozempic and Wegovy in thousands of people with mild Alzheimer's. The goal is to decrease patients' rate of cognitive decline by at least 20%.
 
@@ -59,14 +59,14 @@ She and other Alzheimer's experts told Reuters it's not clear how drugs that tar
 The Alzheimer's studies were launched in 2021 based on animal evidence and analysis of human studies showing a reduced risk of dementia or Alzheimer's in diabetes patients treated with GLP-1s, a Novo spokesperson said.
 
 A small study of the company's older injectable GLP-1, liraglutide, found it slowed the loss of brain volume in people with mild Alzheimer's.",9,4,1,2,6,2
-5,"The Buffalo Bills and Houston Texans will meet on 'Thursday Night Football,' with both squads playing some of their best ball as of late. Each has won three of its last four, with Buffalo (7-3) sitting second in the AFC East, while Houston (5-5) is third in the AFC South.
+4,5,"The Buffalo Bills and Houston Texans will meet on 'Thursday Night Football,' with both squads playing some of their best ball as of late. Each has won three of its last four, with Buffalo (7-3) sitting second in the AFC East, while Houston (5-5) is third in the AFC South.
 
 Buffalo knocked off Tampa, 44-32, in Week 11, as Josh Allen accounted for six total touchdowns. Meanwhile, Houston recorded a 16-13 Sunday victory over Tennessee giving the Texans their second straight win with Davis Mills filling in for C.J. Stroud (concussion). Stroud has been ruled out for this game as well.
 
 Buffalo is currently the No. 5 seed in the AFC, while Houston is the No. 8 seed. Kickoff is at 8:15 p.m. ET from NRG Stadium in Houston.
 
 The latest Texans vs. Bills odds have Buffalo as a 5.5-point favorite, after opening as 2.5-point favorites. The over/under for total points is 44.5. Buffalo is at -275 on the money line (risk $275 to win $100), while Houston is at +223 (risk $100 to win $223).",8,2,1,1,6,5
-6,"For the first time in his second term, President Donald Trump was confronted by his fellow Republicans. And he fell in line.
+5,6,"For the first time in his second term, President Donald Trump was confronted by his fellow Republicans. And he fell in line.
 
 Rather than face a massive defection of Republican votes in the House, Trump flipped to support a bill to force the Department of Justice to release non-classified files related to the convicted sex offender Jeffrey Epstein.
 
@@ -109,12 +109,12 @@ How have lame ducks changed?
 The 20th Amendment to the Constitution was ratified in 1933 in part to shorten the length of lame-duck sessions. Originally, in the pre-modern horse-and-buggy era, unless the president called Congress into session earlier, lawmakers would not convene for a new Congress until 13 months after Election Day.
 
 There’s a lot more time than that — a little less than 36 months — until the next presidential election. ",7,6,8,4,2,6
-7,"While hosting Saudi Crown Prince Mohammed bin Salman at the White House yesterday, President Trump called for ABC’s broadcast license to be revoked, after ABC News White House correspondent Mary Bruce asked him why he had not released the Epstein files.
+6,7,"While hosting Saudi Crown Prince Mohammed bin Salman at the White House yesterday, President Trump called for ABC’s broadcast license to be revoked, after ABC News White House correspondent Mary Bruce asked him why he had not released the Epstein files.
 
 Mary Bruce: “Mr President, why wait for Congress to release the Epstein files? Why not just do it now?”
 
 President Donald Trump: “You know, it’s not the question that I mind. It’s your attitude. I think you are a terrible reporter. It’s the way you ask these questions. … I think the license should be taken away from ABC, because your news is so fake, and it’s so wrong, and we have a great commissioner, the chairman, who should look at that, because I think when you come in and when you’re 97% negative to Trump and then Trump wins the election in a landslide, that means obviously your news is not credible, and you’re not credible as a reporter.”",9,7,1,8,5,8
-8,"SAN DIEGO — San Diego homeowners looking to sell their house have to wait an average of 40 days to find a buyer, a 10-day increase from last year, according to new data from online real estate broker Redfin.
+7,8,"SAN DIEGO — San Diego homeowners looking to sell their house have to wait an average of 40 days to find a buyer, a 10-day increase from last year, according to new data from online real estate broker Redfin.
 
 The increase now puts San Diego 18th in the nation for the number of days homes are on the market before selling.
 
@@ -133,7 +133,7 @@ So, what exactly does this mean for San Diego homeowners looking to sell? Redfin
 Fairweather says with the exception of San Jose, where the AI boom is driving home prices up, the housing market throughout the U.S. is seeing similar trends to San Diego.
 
 ""Generally, in California and nationally, we're seeing a slowdown in the market,"" said Fairweather.",7,2,1,1,6,4
-9,"The Democrat is accused of stealing Federal Emergency Management Agency overpayments that her family health care company had received through a federally funded COVID-19 vaccination staffing contract, federal prosecutors said.
+8,9,"The Democrat is accused of stealing Federal Emergency Management Agency overpayments that her family health care company had received through a federally funded COVID-19 vaccination staffing contract, federal prosecutors said.
 
 A portion of the money was then funneled to support her campaign through candidate contributions, prosecutors allege.
 
@@ -150,7 +150,7 @@ Cherfilus-McCormick was the CEO of Trinity at the time.
 The Office of Congressional Ethics said in a January report that Cherfilus-McCormick's income in 2021 was more than $6 million higher than in 2020, driven by nearly $5.75 million in consulting and profit-sharing fees received from Trinity Healthcare Services.
 
 In July, the House Ethics Committee unanimously voted to reauthorize an investigative subcommittee to examine allegations involving Cherfilus-McCormick.",8,7,7,6,8,3
-10,"Lawmakers Fear Brazil Will Fast Track Bill ‘Targeting U.S. Companies’
+9,10,"Lawmakers Fear Brazil Will Fast Track Bill ‘Targeting U.S. Companies’
 
 American lawmakers are sounding the alarm that Brazil may be taking a page out of Europe’s playbook, enacting laws designed to hurt American companies.
 
@@ -175,3 +175,69 @@ Experts warn that Brazil, one of the largest economies in the world, is setting 
 Michael Toth, research director at the Civitas Institute, warns that Brazil’s proposal will cause the same competition problems that regulation caused in Europe.
 
 “Brazil’s proposed digital markets bill unfairly targets U.S. technology companies under the guise of promoting competition,” Toth said. “By replicating Europe’s flawed model, it creates a discriminatory system that hurts consumers and innovation.”",9,8,9,4,3,5
+0,11,"By Lex Harvey, CNN. Published Jan 28, 2026. 
+U.S. forces are launching a multi-day air exercise in the Middle East as Washington bolsters 
+its regional presence amid rising tensions with Iran. Lt. Gen. Derek France, commander of 
+AFCENT, stated the exercises prove airmen can 'operate and generate combat sorties under 
+demanding conditions alongside partners.' 
+
+The escalation follows President Trump's warning that an 'armada' is heading toward Iran. 
+On Truth Social, Trump stated, 'the next attack will be far worse' than the 2025 strikes 
+on Iranian nuclear facilities if Tehran refuses to negotiate. The USS Abraham Lincoln 
+carrier strike group has officially arrived in the region. Meanwhile, the Iranian Mission 
+to the UN has signaled a readiness for dialogue but warned it will respond 'like never 
+before' if pushed.",9,7,5,1,4,9
+1,12,"Walmart Inc. has confirmed that CEO Doug McMillon will retire on Jan. 31, 2026, 
+succeeded by John Furner, current CEO of Walmart U.S., effective Feb. 1. 
+McMillon, 59, concludes a 40-year career that began as an hourly warehouse associate 
+in 1984. Under his 12-year tenure, Walmart's annual revenue grew from $486 billion 
+to $681 billion, and the stock price surged over 300%.
+
+In his final months, McMillon oversaw a major partnership with OpenAI to integrate 
+'AI-first shopping experiences,' replacing traditional search bars with contextual 
+interactions. McMillon noted that Walmart is now rated as highly for 'convenience' 
+as for 'affordability' in consumer surveys, attributed to investments in e-commerce, 
+automation, and drone delivery. Furner is expected to lead the company through its 
+next 'AI-driven transformation.'",10,2,5,1,2,8
+2,13,"The earliest known handheld wooden tools, used by early human ancestors approximately 430,000 years ago, 
+have been uncovered at the Marathousa 1 site in the Megalopolis Basin, Greece. This discovery, 
+led by Annemieke Milks (University of Reading) and Katerina Harvati (University of Tübingen), 
+was published in PNAS in January 2026. 
+
+The find includes:
+1. An 81-centimeter (31-inch) digging stick made from a small alder (Alnus sp.) trunk, showing 
+   clear stone-tool working marks and soil-rounded wear.
+2. A tiny, finger-held tool made of willow or poplar (Salix/Populus) likely used for fine tasks 
+   such as retouching stone flakes.
+3. An alder trunk fragment with non-anthropogenic deep grooves identified as bear claw marks, 
+   suggesting competition between hominins and large carnivores.
+
+The site, once a lakeshore, provided an oxygen-poor, waterlogged environment that prevented 
+wood decay. Researchers used sediment dating (MIS 12) rather than direct radiocarbon dating, 
+which only spans 50,000 years. The tools were found alongside butchered straight-tusked 
+elephant remains (Palaeoloxodon antiquus), suggesting high behavioral complexity in early 
+Neanderthals or Homo heidelbergensis.",10,2,5,1,2,5
+3,14,"Mother Jones / Sophie Hurwitz. Published Jan 28, 2025 (Updated Jan 2026 contexts).
+The data center industry is spending millions on a PR rebrand to counter growing community opposition 
+over resource drain and rising utility costs. Virginia Connects, an industry group, spent $700,000 
+on digital marketing in 2024 to portray facilities as engines for clean energy and high-paying jobs.
+
+Key Findings & Context:
+1. Job Disparity: While Meta claims '400+ operational jobs' in Altoona, Iowa, researchers from Good 
+   Jobs First and University of Michigan (2025 brief) argue data centers are hyper-capital intensive 
+   but labor-light, creating far fewer jobs than manufacturing or even local casinos (Altoona's 
+   casino employs ~1,000).
+2. Subsidy Costs: Developers pocket over $1 million in state subsidies per permanent job created. 
+   Food & Water Watch found the investment per job in Virginia is 100x higher than other industries.
+3. Political/Regulatory Pushback: Abigail Spanberger won the Virginia gubernatorial election on 
+   promises to regulate the industry. Virginia regulators approved a new 2027 rate structure 
+   to shield households from data center energy costs.
+4. Scale: The industry supported 4.7 million total jobs and $162 billion in taxes in 2023, per the 
+   Data Center Coalition. However, community groups blocked $98 billion in potential investment 
+   between April and June 2025.",9,5,3,1,5,7
+4,15,"Source: The Babylon Bee (Satire). Published Jan 20, 2026.
+In a satirical report, President Trump allegedly 'confessed' at a White House briefing 
+that he had meant to target Iceland for acquisition instead of Greenland for the past 
+year, citing the classic 'Iceland is green, Greenland is ice' naming confusion. 
+The article claims he ordered an immediate shift in focus to Iceland while checking 
+to make sure he didn't actually mean Ireland.",1,10,5,1,8,2
