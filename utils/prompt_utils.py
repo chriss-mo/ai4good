@@ -497,3 +497,110 @@ OUTPUT FORMAT (STRICT JSON)
   ]
 }
 """
+
+def simple_rag_prompt(article_text, vector):
+    retrieved_docs = rag_db.query(article_text)
+
+    prompt = f"""
+You are an AI assistant tasked with evaluating the factuality of a news article using both the article text and relevant retrieved sources. Use the retrieved evidence to verify claims. Predictive model outputs are auxiliary context and should NOT override textual or evidence-based analysis.
+
+Article text: {article_text}
+Retrieved evidence documents: {retrieved_docs}
+Predictive model vector: {vector}  # replace with actual model vector
+
+FACTUALITY FACTORS
+1. Authenticity (1-10): Are claims verifiable? Cite sources or timestamps.
+2. Sensationalism (1-10): Hyperbole, emotional language, dramatic phrasing.
+3. Political Bias (0-10 + tag): Left, right, centrist, mixed. Note partisan framing.
+4. Spam (1-10): Spam characteristics or disinformation.
+5. Confirmation Bias (1-10): Cherry-picked evidence, missing counterarguments.
+6. Short-term Utility (1-10): Clickbait, monetization cues, urgency.
+
+OUTPUT (STRICT JSON)
+{{
+  "veracity_label": "...",
+  "explanation_text": "...",
+  "factor_scores": [
+    {{"factor": "Authenticity", "score": 1-10, "reasoning": "..."}},
+    {{"factor": "Sensationalism", "score": 1-10, "reasoning": "..."}},
+    {{"factor": "Political Bias", "score": 1-10, "reasoning": "..."}},
+    {{"factor": "Spam", "score": 1-10, "reasoning": "..."}},
+    {{"factor": "Confirmation Bias", "score": 1-10, "reasoning": "..."}},
+    {{"factor": "Short-term Utility", "score": 1-10, "reasoning": "..."}}
+  ]
+}}"""
+    return prompt
+
+def rag_prompt(article_text):
+    retrieved_docs = rag_db.query(article_text)
+    plain rag prompt = f"""
+You are an AI assistant tasked with evaluating the factuality of a news article using ONLY the retrieved evidence provided.
+Do NOT rely on any predictive model outputs. Your evaluation must be based entirely on the text of the article and the supporting sources.
+
+INPUTS
+- Article text: {article_text}
+- Retrieved evidence documents: {retrieved_docs}
+
+FACTUALITY FACTORS
+1. Authenticity (1-10): Are claims verifiable? Cite sources or timestamps.
+2. Sensationalism (1-10): Hyperbole, emotional language, dramatic phrasing.
+3. Political Bias (0-10 + tag): Left, right, centrist, mixed. Note partisan framing.
+4. Spam (1-10): Spam characteristics or disinformation.
+5. Confirmation Bias (1-10): Cherry-picked evidence, missing counterarguments.
+6. Short-term Utility (1-10): Clickbait, monetization cues, urgency.
+
+OUTPUT (STRICT JSON)
+{{
+  "veracity_label": "True, Mostly True, Half True, Mostly False, False, Pants on Fire",
+  "explanation_text": "Explain the final verdict, citing retrieved evidence for verification. Detail reasoning for each factor.",
+  "factor_scores": [
+    {{"factor": "Authenticity", "score": 1-10, "reasoning": "..."}},
+    {{"factor": "Sensationalism", "score": 1-10, "reasoning": "..."}},
+    {{"factor": "Political Bias", "score": 1-10, "reasoning": "..."}},
+    {{"factor": "Spam", "score": 1-10, "reasoning": "..."}},
+    {{"factor": "Confirmation Bias", "score": 1-10, "reasoning": "..."}},
+    {{"factor": "Short-term Utility", "score": 1-10, "reasoning": "..."}}
+  ]
+}}
+"""
+    return prompt
+
+def simple_func_rag_prompt(article_text):
+    prompt = f"""
+You are an AI assistant tasked with fact-checking a news article. You must use **only retrieved evidence** and helper functions for auxiliary signals.
+
+Article text: {article_text}
+
+Instructions:
+1. Retrieve relevant evidence using your RAG retrieval mechanism on the article text.
+2. Use the retrieved evidence to verify each claim.
+3. Directly call the following helper functions during your reasoning as needed:
+   - func_political_bias(text): returns statistics about political talking points.
+   - func_sensationalism(text): returns emotional intensity and polarity.
+   - func_spam(text): returns the probability the text is spam.
+   - func_BERT(text): returns a BERT-based truthfulness prediction with class probabilities.
+4. Combine the retrieved evidence and function outputs to assign scores for the following factuality factors:
+
+FACTUALITY FACTORS:
+1. Authenticity (1-10): Are claims verifiable? Cite sources or timestamps.
+2. Sensationalism (1-10): Hyperbole, emotional language, dramatic phrasing. Use func_sensationalism for guidance.
+3. Political Bias (0-10 + tag): Left, right, centrist, mixed. Support your reasoning using func_political_bias.
+4. Spam (1-10): Detect spam characteristics using func_spam.
+5. Confirmation Bias (1-10): Identify cherry-picked evidence or missing counterarguments.
+6. Short-term Utility (1-10): Detect clickbait, monetization cues, urgency.
+
+OUTPUT (STRICT JSON):
+{{
+  "veracity_label": "True, Mostly True, Half True, Mostly False, False, Pants on Fire",
+  "explanation_text": "Explain the final verdict. Cite retrieved evidence and show how helper function outputs informed each factor.",
+  "factor_scores": [
+    {{"factor": "Authenticity", "score": 1-10, "reasoning": "..."}},
+    {{"factor": "Sensationalism", "score": 1-10, "reasoning": "..."}},
+    {{"factor": "Political Bias", "score": 1-10, "reasoning": "..."}},
+    {{"factor": "Spam", "score": 1-10, "reasoning": "..."}},
+    {{"factor": "Confirmation Bias", "score": 1-10, "reasoning": "..."}},
+    {{"factor": "Short-term Utility", "score": 1-10, "reasoning": "..."}}
+  ]
+}}
+"""
+    return prompt
