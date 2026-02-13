@@ -27,9 +27,8 @@ ai4good│
 │        │      └───train2.tsv
 │        │      └───val2.tsv
 │        │      
-│        └───labeled_articles.csv             <- manually-labeled data from us and our classmates
-│        └───rxavierlabeled_articles.csv
-│        └───polifact.csv
+│        └───labeled_articles.csv             <- manually-labeled articles
+│        └───prompting_results.csv            <- classification performace of different prompts, used to display in our web application
 │        └───test.pdf                         <- example PDF for our rag model
 │        └───top_conservative_bigrams.csv     <- scraped bigrams from all text spoken on the floor of the Senate and the House of Representatitves along with speaker party (https://data.stanford.edu/congress_text)
 │        └───top_liberal_bigrams.csv
@@ -38,12 +37,10 @@ ai4good│
 └─── notebooks             <- folder that holds our notebooks for training and running models
 │        │ 
 │        └───gemini_prompt_refined.ipynb      <- Pipeline integrating predictive veracity scores and generative prompting
-│        └───mxnet_training.ipynb             <- Adapted from Dr. Arsanjani's approach using MXNet in PyTorch for sentence transformers
 │        └───exploration_analysis.ipynb       <- Exploratory notebook examining the Liar-PLUS dataset
 │        └───full_pred_model.ipynb            <- Full predictive pipeline of our 4 chosen factuality factors
-│        └───ingestor.ipynb                   <- Proof-of-concept notebook showing how we use the News API to scrape listings for our dataset
-│        └───prompt-refinement.ipynb          <- Notebook showing our prompt progression, and how the LLM outputs change depending on prompting strategies
-│        └───rag_poc.ipynb                    <- Proof-of-concept notebook showing how we can implement a Retrieval-Augment-Generate (RAG) model from a PDF
+│        └───prompt_refinement.ipynb          <- Notebook showing our prompt progression, and how the LLM outputs change depending on prompting strategies
+│        └───agent_eval.ipynb                 <- Evaluation of single-agent environment on manually labeled datasets
 │        └───webpage_runner.ipynb             <- Full predictive pipeline and generative prompting with Gradio website launcher
 │        
 └─── utils                 <- folder that holds our utility files
