@@ -13,6 +13,7 @@ We then use these factuality factors in tandem to predict the Politifact truth l
 ## Folder Structure:
 ```
 ai4good
+│
 └─── data                  <- folder that holds our dataset and synthetically generated data  
 │        │ 
 │        └───liar-plus                        <- liar-plus dataset from u/Tariq-60
