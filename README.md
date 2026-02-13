@@ -35,12 +35,13 @@ ai4good│
 │        └───vocabs.pkl                       <- author, topic list, job, affiliation vocabularies from training pipeline. Necessary for evaluating test set and other unseen data
 │        
 └─── notebooks             <- folder that holds our notebooks for training and running models
-│        │ 
-│        └───gemini_prompt_refined.ipynb      <- Pipeline integrating predictive veracity scores and generative prompting
+│        │
+│        └───agent_eval.ipynb                 <- Evaluation of multi-agent function-calling environment on manually labeled datasets
+│        └───agentic_prototype.ipynb          <- Prototyping multi-agent systems in a notebook
 │        └───exploration_analysis.ipynb       <- Exploratory notebook examining the Liar-PLUS dataset
 │        └───full_pred_model.ipynb            <- Full predictive pipeline of our 4 chosen factuality factors
+│        └───prompt_evaluation.ipynb          <- Single-agent evaluation on manually labeled articles
 │        └───prompt_refinement.ipynb          <- Notebook showing our prompt progression, and how the LLM outputs change depending on prompting strategies
-│        └───agent_eval.ipynb                 <- Evaluation of single-agent environment on manually labeled datasets
 │        └───webpage_runner.ipynb             <- Full predictive pipeline and generative prompting with Gradio website launcher
 │        
 └─── utils                 <- folder that holds our utility files
@@ -48,6 +49,7 @@ ai4good│
 │        └───nlp_utils.py                     <- Function store for opening, cleaning, and processing Liar-PLUS data
 │        └───ingestor_utils.py                <- Function store for methods outlined in ingestor.ipynb. Use in full pipeline/unseen data applications
 │        └───mxnet_utils.py                   <- Function/class store for common functions used in the MXNet training and evaluation workflow
+│        └───prompt_utils.py                  <- File containing shell functions that return prompts for our workflows to use
 │ 
 │        
 └─── (checkpoints)         <- folder that holds our pretrained model
