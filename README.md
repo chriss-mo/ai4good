@@ -12,7 +12,7 @@ We then use these factuality factors in tandem to predict the Politifact truth l
 
 ## Folder Structure:
 ```
-ai4good│
+ai4good
 └─── data                  <- folder that holds our dataset and synthetically generated data  
 │        │ 
 │        └───liar-plus                        <- liar-plus dataset from u/Tariq-60
@@ -81,6 +81,12 @@ gemini:
   api: "<your API key here>"
 
 nautilus:
+  api: "<your API key here>"
+
+google:
+  api: "<your API key here>"
+
+vertex:
   api: "<your API key here>"
 ```
 
