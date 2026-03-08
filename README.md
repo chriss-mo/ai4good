@@ -2,6 +2,8 @@
 ### Chris Mo and Ryan Xavier, DSC 180A/B 2025-2026  
 
 ## Introduction
+In a world of misinformation, it is easy for citizens desiring to be informed to be easily led astray. Furthermore, social media has created vast echo chambers for misinformation to spread like wildfire, and companies have largely discontinued community-based fact-checking programs.
+
 In this project, we develop AI/ML enabled ways to detect misinformation in textual data. Starting with the [Liar-PLUS dataset](https://github.com/Tariq60/LIAR-PLUS), we train predictive models on a number of factuality factors, which we define below:  
 * **BERT/Sentence Transformers:** Learn patterns with Transformers. Learn the underlying pattern of the text through the use of the transformer attention mechanism.
 * **Spam:** Is this spam? How does spam relate to disinformation?
@@ -28,9 +30,9 @@ ai4good
 │        │      └───train2.tsv
 │        │      └───val2.tsv
 │        │      
-│        └───labeled_articles.csv             <- manually-labeled articles
+│        └───labeled_articles.csv             <- manually-labeled articles for agentic AI evaluation
 │        └───prompting_results.csv            <- classification performace of different prompts, used to display in our web application
-│        └───test.pdf                         <- example PDF for our rag model
+│        └───test.pdf                         <- example PDF for our RAG model
 │        └───top_conservative_bigrams.csv     <- scraped bigrams from all text spoken on the floor of the Senate and the House of Representatitves along with speaker party (https://data.stanford.edu/congress_text)
 │        └───top_liberal_bigrams.csv
 │        └───vocabs.pkl                       <- author, topic list, job, affiliation vocabularies from training pipeline. Necessary for evaluating test set and other unseen data
@@ -38,12 +40,13 @@ ai4good
 └─── notebooks             <- folder that holds our notebooks for training and running models
 │        │
 │        └───agent_eval.ipynb                 <- Evaluation of multi-agent function-calling environment on manually labeled datasets
+│        └───agent_website.ipynb              <- Notebook to launch our agentic classifier
 │        └───agentic_prototype.ipynb          <- Prototyping multi-agent systems in a notebook
 │        └───exploration_analysis.ipynb       <- Exploratory notebook examining the Liar-PLUS dataset
 │        └───full_pred_model.ipynb            <- Full predictive pipeline of our 4 chosen factuality factors
-│        └───prompt_evaluation.ipynb          <- Single-agent evaluation on manually labeled articles
-│        └───prompt_refinement.ipynb          <- Notebook showing our prompt progression, and how the LLM outputs change depending on prompting strategies
-│        └───webpage_runner.ipynb             <- Full predictive pipeline and generative prompting with Gradio website launcher
+│        └───prompt_evaluation.ipynb          <- Single-agent evaluation on manually labeled articles. Also a test bed for evaluating prompts on our manually-labeled dataset
+depending on prompting strategies
+│        └───webpage_runner.ipynb             <- Single-agent classification pipeline with Gradio website launcher
 │        
 └─── utils                 <- folder that holds our utility files
 │        │ 
@@ -57,7 +60,7 @@ ai4good
 │        │ 
 │        └───best.pth                         <- Pretrained MXNet model (too large to include in Github)
 │
-└───(.config.yaml)         <- stores gemini and nautilus API keys (described below)
+└───(.config.yaml)         <- stores API keys (described below)
 └───.gitignore
 └───req.txt
 └───README.md
