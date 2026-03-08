@@ -24,7 +24,6 @@ tokenizers==0.22.1
 rapidfuzz==3.14.1
 vaderSentiment==3.3.2
 
-google-genai==1.50.1
 openai==2.8.1
 PyYAML==6.0.3
 regex==2025.9.18

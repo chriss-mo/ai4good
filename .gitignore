@@ -14,6 +14,7 @@ clean_articles.parquet
 articles/
 notebooks/catboost_info/
 checkpoints/
+notebooks/training_nb.ipynb
 
 # ----------------------------
 # Agent Testing Folders
