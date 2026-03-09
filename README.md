@@ -4,7 +4,7 @@
 ## Introduction
 In a world of misinformation, it is easy for citizens desiring to be informed to be easily led astray. Furthermore, social media has created vast echo chambers for misinformation to spread like wildfire, and companies have largely discontinued community-based fact-checking programs.
 
-In this project, we develop AI/ML enabled ways to detect misinformation in textual data. Starting with the [Liar-PLUS dataset](https://github.com/Tariq60/LIAR-PLUS), we train predictive models on a number of factuality factors, which we define below:  
+In this project, we develop AI/ML enabled ways to detect misinformation in textual data. Starting with the [Liar-PLUS dataset](https://github.com/Tariq60/LIAR-PLUS), we train predictive models on a number of factuality factors from [Alternus Vera](https://alternusvera.wordpress.com/), which we define below:  
 * **BERT/Sentence Transformers:** Learn patterns with Transformers. Learn the underlying pattern of the text through the use of the transformer attention mechanism.
 * **Spam:** Is this spam? How does spam relate to disinformation?
 * **Political Bias:** Does the text exhibit political bias? How promininent is this?
