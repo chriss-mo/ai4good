@@ -97,6 +97,6 @@ vertex:
 ```
 
 ## Running the Web Application
-* After installing all necessary packages, navigate to `notebooks/webpage_runner.ipynb`
+* After installing all necessary packages, navigate to `notebooks/agent_website.ipynb`
 * Run all cells
 * In the last cell, a local link will appear. Follow the link to get to the demo website and paste an article in!
