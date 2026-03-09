@@ -1,38 +1,43 @@
-transformers==4.57.1
-torch==2.8.0
-torchaudio==2.8.0
-torchvision==0.23.0
+# --- Core Project Dependencies ---
+transformers==4.57.0
+torch==2.9.1
+torchaudio==2.9.1
+torchvision==0.24.1
 
-scikit-learn==1.5.0
+scikit-learn==1.7.2
 xgboost==3.0.5
 catboost==1.2.8
-numpy==2.3.4
-pandas==2.3.3
+numpy==2.0.2
+pandas==2.2.3
 matplotlib==3.10.7
 wordcloud==1.9.4
 seaborn==0.13.2
-beautifulsoup4
-newspaper3k==0.2.8
-lxml>=5.0.0
-lxml_html_clean
 
+# --- Web & NLP Utilities ---
+beautifulsoup4==4.14.3
+newspaper3k==0.2.8
+lxml==6.0.2
+lxml_html_clean==0.4.3
 spacy==3.8.7
+# Note: Ensure this URL remains accessible in your new venv
 en_core_web_md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl
 
 sentence-transformers==5.1.1
 tokenizers==0.22.1
-rapidfuzz==3.14.1
+rapidfuzz==3.14.3
 vaderSentiment==3.3.2
 
-google-genai==1.50.1
+# --- APIs, Data, & Frameworks ---
 openai==2.8.1
 PyYAML==6.0.3
 regex==2025.9.18
 requests==2.32.5
-
 gradio==5.49.1
 gradio_client==1.13.3
+chromadb==1.1.1
+pypdf==6.7.0
 
+# --- Google Cloud Platform SDKs ---
 google==3.0.0
 google-adk==1.24.1
 google-api-core==2.29.0
@@ -41,28 +46,12 @@ google-auth==2.48.0
 google-auth-httplib2==0.3.0
 google-auth-oauthlib==1.2.0
 google-cloud-aiplatform==1.137.0
-google-cloud-appengine-logging==1.8.0
-google-cloud-audit-log==0.4.0
 google-cloud-bigquery==3.40.0
-google-cloud-bigquery-storage==2.36.0
-google-cloud-bigtable==2.35.0
-google-cloud-core==2.5.0
-google-cloud-discoveryengine==0.13.12
-google-cloud-iam==2.21.0
-google-cloud-logging==3.13.0
-google-cloud-monitoring==2.29.1
-google-cloud-pubsub==2.35.0
-google-cloud-resource-manager==1.16.0
-google-cloud-secret-manager==2.26.0
-google-cloud-spanner==3.62.0
-google-cloud-speech==2.36.1
 google-cloud-storage==3.9.0
-google-cloud-trace==1.18.0
-google-crc32c==1.8.0
+google-cloud-logging==3.13.0
 google-genai==1.62.0
-google-pasta==0.2.0
-google-resumable-media==2.8.0
-googleapis-common-protos==1.72.0
 
-chromadb==1.1.1
-pypdf==6.7.0
+# Include these core auth packages for GCP
+google-auth==2.48.0
+google-auth-httplib2==0.3.0
+google-auth-oauthlib==1.2.0

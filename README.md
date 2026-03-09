@@ -4,7 +4,7 @@
 ## Introduction
 In a world of misinformation, it is easy for citizens desiring to be informed to be easily led astray. Furthermore, social media has created vast echo chambers for misinformation to spread like wildfire, and companies have largely discontinued community-based fact-checking programs.
 
-In this project, we develop AI/ML enabled ways to detect misinformation in textual data. Starting with the [Liar-PLUS dataset](https://github.com/Tariq60/LIAR-PLUS), we train predictive models on a number of factuality factors, which we define below:  
+In this project, we develop AI/ML enabled ways to detect misinformation in textual data. Starting with the [Liar-PLUS dataset](https://github.com/Tariq60/LIAR-PLUS), we train predictive models on a number of factuality factors from [Alternus Vera](https://alternusvera.wordpress.com/), which we define below:  
 * **BERT/Sentence Transformers:** Learn patterns with Transformers. Learn the underlying pattern of the text through the use of the transformer attention mechanism.
 * **Spam:** Is this spam? How does spam relate to disinformation?
 * **Political Bias:** Does the text exhibit political bias? How promininent is this?
@@ -76,7 +76,9 @@ depending on prompting strategies
 To reproduce the code, you will need to install the python packages in `req.txt` by changing directories to this repository and running in your terminal:  
 ```
   pip install -r req.txt
-```  
+  pip install "google-adk[extensions]"
+  pip install --upgrade "a2a-sdk[http-server]"
+```
 **Note:** This is assuming you do not have a CUDA runtime installed, and will only utilize the CPU for computations. To install the CUDA-compatible versions, uninstall PyTorch and install the version corresponding to your CUDA version on [PyTorch's website](https://pytorch.org/get-started/locally/)  
 
 You'll also need to download [this pretrained model](https://drive.google.com/file/d/1TE7gZblTT_pIVPH00dKf4-SrObbIcKV0/view?usp=sharing) and have it in a folder called "checkpoints." This was not included in our repository due to its size, and it would be necessary to include this folder in your `.gitignore`. Additionally, you would need a `config.yaml` file included in the main repository that follows this structure:  
@@ -95,6 +97,6 @@ vertex:
 ```
 
 ## Running the Web Application
-* After installing all necessary packages, navigate to `notebooks/webpage_runner.ipynb`
+* After installing all necessary packages, navigate to `notebooks/agent_website.ipynb`
 * Run all cells
 * In the last cell, a local link will appear. Follow the link to get to the demo website and paste an article in!
