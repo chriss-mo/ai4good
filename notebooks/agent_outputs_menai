@@ -1,0 +1,235 @@
+2026-03-09 16:27:31,135 - INFO - 
+LiteLLM completion() model= gemini-3-pro-preview; provider = gemini
+/Users/chris/Documents/GitHub/ai4good/.venv/lib/python3.12/site-packages/pydantic/main.py:463: UserWarning: Pydantic serializer warnings:
+  PydanticSerializationUnexpectedValue(Expected 10 fields but got 7: Expected `Message` - serialized value may not be as expected [input_value=Message(content='```json\...6rzr0Xx4uHG89GLwoQU=']}), input_type=Message])
+  PydanticSerializationUnexpectedValue(Expected `StreamingChoices` - serialized value may not be as expected [input_value=Choices(finish_reason='st...rzr0Xx4uHG89GLwoQU=']})), input_type=Choices])
+  return self.__pydantic_serializer__.to_python(
+2026-03-09 16:27:41,818 - INFO - Status: 200
+2026-03-09 16:27:41,820 - INFO - Raw response:
+{
+  "id": 1,
+  "jsonrpc": "2.0",
+  "result": {
+    "artifacts": [
+      {
+        "artifactId": "7e332b03-7226-489f-962f-7d0a33d9d720",
+        "parts": [
+          {
+            "kind": "text",
+            "text": "```json\n{\n  \"veracity_label\": \"Mostly True\",\n  \"explanation_text\": \"The article accurately describes the historical significance, location, purpose, and designer of the Menai Strait Bridge. However, it contains some chronological inaccuracies: construction actually began in 1819, not 1826 (1826 was the year it opened), and its 200th anniversary occurs in 2026, which the article presents in the past tense ('celebrated'). Furthermore, the central span of the bridge is 580 feet, although the total length approaches the 1,368 feet mentioned.\",\n  \"factor_scores\": [\n    {\n      \"factor\": \"Authenticity\",\n      \"score\": 7,\n      \"reasoning\": \"Contains verifiable historical facts, geographical locations, and accurate quotes from named engineers, though it contains minor date/event confusion (stating construction started in 1826 rather than opened in 1826).\"\n    },\n    {\n      \"factor\": \"Sensationalism\",\n      \"score\": 2,\n      \"reasoning\": \"The emotional intensity score is 0.0. The text uses some engaging language ('absolutely bonkers', 'vision of the future') but remains overwhelmingly educational and objective.\"\n    },\n    {\n      \"factor\": \"Political Bias\",\n      \"score\": 1,\n      \"reasoning\": \"The analysis detected one conservative talking point (likely related to infrastructure/fiscal history) and zero liberal points. The framing is entirely historical and non-partisan.\"\n    },\n    {\n      \"factor\": \"Spam\",\n      \"score\": 1,\n      \"reasoning\": \"Spam likelihood is evaluated at roughly 6.6%. The content is highly specific, well-written, and reads like a standard history or travel journalism piece rather than bot-generated spam.\"\n    },\n    {\n      \"factor\": \"Confirmation Bias\",\n      \"score\": 2,\n      \"reasoning\": \"There is no evidence of cherry-picked facts to support a specific ideological agenda. The historical narrative provides standard context for the bridge's creation.\"\n    },\n    {\n      \"factor\": \"Short-Term Utility\",\n      \"score\": 2,\n      \"reasoning\": \"The article does not exhibit clickbait characteristics or aggressive monetization cues. It is a straightforward historical feature.\"\n    }\n  ]\n}\n```"
+          }
+        ]
+      }
+    ],
+    "contextId": "3cc39834-7393-4a63-b4e6-3e94cb460af1",
+    "history": [
+      {
+        "contextId": "3cc39834-7393-4a63-b4e6-3e94cb460af1",
+        "kind": "message",
+        "messageId": "61d3b8cd-b7e9-4367-9666-04f530659e35",
+        "parts": [
+          {
+            "kind": "text",
+            "text": "It was built to ferry horse-drawn carriages across a notoriously wild stretch of water, and was a crucial connection between two island nations during Europe\u2019s industrial revolution.\n\nWhen it was constructed in 1826, the bridge across the Menai Strait, between the north Wales mainland and the island of Anglesey, was a vision of the future. Suspended between the 1,368-foot gap at a height of 102 feet, this was the world\u2019s first road suspension bridge to start construction. By the time it opened, it was the longest in the world, and remained so until the completion of the Brooklyn Bridge in 1883.\n\nPerhaps more incredibly, the Menai Strait Bridge \u2014 or Pont Grog y Borth in Welsh \u2014 is still in use, over two centuries later. It celebrated its 200th anniversary on January 30.\n\n\u201cWhile there are a fair few bridges that have lasted 200 years or more \u2014 there are even Roman bridges \u2014 none of them look like this,\u201d says Kerry Evans, the chartered engineer who manages the bridge and the modern A55 road around it.\n\n\u201cThat expression of freedom in terms of innovation and design to develop a structure \u2014 that was absolutely bonkers when you look back now.\u201d\n\nDesigned by Thomas Telford, one of the earliest civil engineers in history, the bridge didn\u2019t just connect Anglesey to the Welsh mainland; it was also part of a network that linked two capitals, Dublin and London. A law passed in 1800 had officially united Ireland with Great Britain, creating the United Kingdom, and there was political pressure to build easy transport links between the capitals.\n\nFerries ran from Dublin to Holyhead, on Anglesey; but crossing from there to the Welsh mainland, also by ferry, was notoriously tricky. The Menai Strait was known for its currents, and crossings were often canceled. Anglesey farmers, known for their cattle-breeding, would drive their herds across the strait themselves, often losing animals to the waves. What\u2019s more, the ferrymen would take advantage of passengers. \u201cThey blackmailed people \u2014 if the tide was coming in, they\u2019d put up the price,\u201d says William Day, a retired civil engineer and North Wales resident. It wasn\u2019t the sophisticated, well-oiled system that a rapidly expanding empire sought to portray.\n\nIn 1815, the government voted to construct a road from London to Holyhead. Telford \u2014 a Scot who\u2019d made a name for himself constructing canals and roads in the Midlands, at the heart of the industrial revolution \u2014 was employed to build it. And one of the last parts of that road \u2014 which ran through cities from Birmingham to Shrewsbury \u2014 would be the crossing of the Menai Strait."
+          }
+        ],
+        "role": "user",
+        "taskId": "776c7435-a8a9-406b-b6a4-57f1a5a935f1"
+      },
+      {
+        "contextId": "3cc39834-7393-4a63-b4e6-3e94cb460af1",
+        "kind": "message",
+        "messageId": "61d3b8cd-b7e9-4367-9666-04f530659e35",
+        "parts": [
+          {
+            "kind": "text",
+            "text": "It was built to ferry horse-drawn carriages across a notoriously wild stretch of water, and was a crucial connection between two island nations during Europe\u2019s industrial revolution.\n\nWhen it was constructed in 1826, the bridge across the Menai Strait, between the north Wales mainland and the island of Anglesey, was a vision of the future. Suspended between the 1,368-foot gap at a height of 102 feet, this was the world\u2019s first road suspension bridge to start construction. By the time it opened, it was the longest in the world, and remained so until the completion of the Brooklyn Bridge in 1883.\n\nPerhaps more incredibly, the Menai Strait Bridge \u2014 or Pont Grog y Borth in Welsh \u2014 is still in use, over two centuries later. It celebrated its 200th anniversary on January 30.\n\n\u201cWhile there are a fair few bridges that have lasted 200 years or more \u2014 there are even Roman bridges \u2014 none of them look like this,\u201d says Kerry Evans, the chartered engineer who manages the bridge and the modern A55 road around it.\n\n\u201cThat expression of freedom in terms of innovation and design to develop a structure \u2014 that was absolutely bonkers when you look back now.\u201d\n\nDesigned by Thomas Telford, one of the earliest civil engineers in history, the bridge didn\u2019t just connect Anglesey to the Welsh mainland; it was also part of a network that linked two capitals, Dublin and London. A law passed in 1800 had officially united Ireland with Great Britain, creating the United Kingdom, and there was political pressure to build easy transport links between the capitals.\n\nFerries ran from Dublin to Holyhead, on Anglesey; but crossing from there to the Welsh mainland, also by ferry, was notoriously tricky. The Menai Strait was known for its currents, and crossings were often canceled. Anglesey farmers, known for their cattle-breeding, would drive their herds across the strait themselves, often losing animals to the waves. What\u2019s more, the ferrymen would take advantage of passengers. \u201cThey blackmailed people \u2014 if the tide was coming in, they\u2019d put up the price,\u201d says William Day, a retired civil engineer and North Wales resident. It wasn\u2019t the sophisticated, well-oiled system that a rapidly expanding empire sought to portray.\n\nIn 1815, the government voted to construct a road from London to Holyhead. Telford \u2014 a Scot who\u2019d made a name for himself constructing canals and roads in the Midlands, at the heart of the industrial revolution \u2014 was employed to build it. And one of the last parts of that road \u2014 which ran through cities from Birmingham to Shrewsbury \u2014 would be the crossing of the Menai Strait."
+          }
+        ],
+        "role": "user",
+        "taskId": "776c7435-a8a9-406b-b6a4-57f1a5a935f1"
+      },
+      {
+        "kind": "message",
+        "messageId": "5dd439b0-9ca8-4582-b31e-dbf431d50e2a",
+        "parts": [
+          {
+            "data": {
+              "id": "call_af3ea9fb9a84472db5b9b9ceff0a__thought__EvIGCu8GAb4+9vuG/7re4PKoQUGXIufefwrmeh7d2RltbEsKjQcH5DQGZbkzGLD4KqQyBtVUv/dXNNEOvIoX0odXIxf4o9tHhehu+0ZcKti3yhhHedpQmXPgXLxU7/E6mXa0XVyBk8KQixlNPNXil4iaOCOSCX+MON1jP7uEifuaiBY91Q9fobOqcxn9crwKTvPe1oqddvgoDe/naZ32xT64SZARbCteIsL0gjm1E8y5Y6G8k8LietQB0hAE170fQTHv2oxlSuWOipTYEWGlox7vD2pkbU+mYwBHKFuI5m7NfpOybSq9KZo2mFbjg7yTktHmMFH69B3vM/VBhnZEA7nOaC0tcYO/j1CakJ95ZW5Z2o6JOOO3GTn8IDq4DvegAO+2mWoEsPuAgp4aCqDPdMLtOmyEKDbOtax4SgLeiEqJFUEVztbbNScvAYqOMo7QV+vuoe6kYB4vMxyNfH3PZKQe4+PNtZ2zBrPJ2+sm1uVeT06mtvl2a4xehT9Fm3RZgD1cT6ATRxDY/3RZ7FxkjFKl3Ay8iW+OgTr8zDAZT2TzR7bcZCq1uVonVFjBeYba1wSf2TwiRbscH6HAv5f4b/eXi9B6JtQ57ojdYzUts8U2sYQFcBzIVZnFzpoRkLbdZXkWM84eMIkWA5JLXnY/brEopCe2NJwiBj68XMz1B1NCvBqykN5JyRaWufnoKOzml/s/O8usjWi+MSV61qZl5Ryv0fKANNVnj3QLXybc3o8vqG17u20Cn8qSnKLe2WyRnqj6mhU+qf5KRdB9oL47DisgGxOpTpyL3Dbz7ounUiznWvl5lsSwt5XZpVdQBfSJpgFVnRCcWe0Oq/KmQSloy9XeJ/csPsUizonCpu1RM4j0aiEIqRPFOF4sOThDChOEwnAgV7fLxbVns9ahC6NkkuHNjp7J5TIoHTEDmHg0q+VffcDfpZ/zYrxjRxmdxi4/sUCLmBOlCCYO4d/kmYi6inhYocT/FZoq7Du14YL8LuQNtZ783cmOe1XtShscHo4ALLwPPiSQk4LV85udzv8ZTGA5goEqX8q1iqmjBaiGMY1LjzeESxQ2iW89+jXwhNXEfEhlzB/8hYhroCCT68BIH+ZAASWmprJ6dNDPDHFLmSZsRjvHpEnV+YP699HRMTdiPA70UJDUZv/dYS7SZS0lCSgNHScy",
+              "args": {
+                "request": "Analyze truthfulness probabilities for the Menai Strait Bridge article."
+              },
+              "name": "BERT_Agent"
+            },
+            "kind": "data",
+            "metadata": {
+              "adk_type": "function_call"
+            }
+          },
+          {
+            "data": {
+              "id": "call_38214f084dc04b38b2a1dfa3ddcd",
+              "args": {
+                "request": "Check for stats and partisan framing in the Menai Strait Bridge article."
+              },
+              "name": "Political_Bias_Agent"
+            },
+            "kind": "data",
+            "metadata": {
+              "adk_type": "function_call"
+            }
+          },
+          {
+            "data": {
+              "id": "call_c84db0ca8ea9419c96b241d36f93",
+              "args": {
+                "request": "Get emotional intensity score for the Menai Strait Bridge article."
+              },
+              "name": "Sensationalism_Agent"
+            },
+            "kind": "data",
+            "metadata": {
+              "adk_type": "function_call"
+            }
+          },
+          {
+            "data": {
+              "id": "call_82c47c827990450299b872dc958e",
+              "args": {
+                "request": "Check for bot-like characteristics in the Menai Strait Bridge article."
+              },
+              "name": "Spam_Agent"
+            },
+            "kind": "data",
+            "metadata": {
+              "adk_type": "function_call"
+            }
+          },
+          {
+            "data": {
+              "id": "call_644e27b0bde24aabbfa5da8e65b3",
+              "args": {
+                "request": "Search for Menai Strait Bridge 200th anniversary January 30 1826 construction."
+              },
+              "name": "Web_Search_Agent"
+            },
+            "kind": "data",
+            "metadata": {
+              "adk_type": "function_call"
+            }
+          }
+        ],
+        "role": "agent"
+      },
+      {
+        "kind": "message",
+        "messageId": "de1cceba-6ab3-438a-b51a-5ca26bfece14",
+        "parts": [
+          {
+            "data": {
+              "id": "call_af3ea9fb9a84472db5b9b9ceff0a__thought__EvIGCu8GAb4+9vuG/7re4PKoQUGXIufefwrmeh7d2RltbEsKjQcH5DQGZbkzGLD4KqQyBtVUv/dXNNEOvIoX0odXIxf4o9tHhehu+0ZcKti3yhhHedpQmXPgXLxU7/E6mXa0XVyBk8KQixlNPNXil4iaOCOSCX+MON1jP7uEifuaiBY91Q9fobOqcxn9crwKTvPe1oqddvgoDe/naZ32xT64SZARbCteIsL0gjm1E8y5Y6G8k8LietQB0hAE170fQTHv2oxlSuWOipTYEWGlox7vD2pkbU+mYwBHKFuI5m7NfpOybSq9KZo2mFbjg7yTktHmMFH69B3vM/VBhnZEA7nOaC0tcYO/j1CakJ95ZW5Z2o6JOOO3GTn8IDq4DvegAO+2mWoEsPuAgp4aCqDPdMLtOmyEKDbOtax4SgLeiEqJFUEVztbbNScvAYqOMo7QV+vuoe6kYB4vMxyNfH3PZKQe4+PNtZ2zBrPJ2+sm1uVeT06mtvl2a4xehT9Fm3RZgD1cT6ATRxDY/3RZ7FxkjFKl3Ay8iW+OgTr8zDAZT2TzR7bcZCq1uVonVFjBeYba1wSf2TwiRbscH6HAv5f4b/eXi9B6JtQ57ojdYzUts8U2sYQFcBzIVZnFzpoRkLbdZXkWM84eMIkWA5JLXnY/brEopCe2NJwiBj68XMz1B1NCvBqykN5JyRaWufnoKOzml/s/O8usjWi+MSV61qZl5Ryv0fKANNVnj3QLXybc3o8vqG17u20Cn8qSnKLe2WyRnqj6mhU+qf5KRdB9oL47DisgGxOpTpyL3Dbz7ounUiznWvl5lsSwt5XZpVdQBfSJpgFVnRCcWe0Oq/KmQSloy9XeJ/csPsUizonCpu1RM4j0aiEIqRPFOF4sOThDChOEwnAgV7fLxbVns9ahC6NkkuHNjp7J5TIoHTEDmHg0q+VffcDfpZ/zYrxjRxmdxi4/sUCLmBOlCCYO4d/kmYi6inhYocT/FZoq7Du14YL8LuQNtZ783cmOe1XtShscHo4ALLwPPiSQk4LV85udzv8ZTGA5goEqX8q1iqmjBaiGMY1LjzeESxQ2iW89+jXwhNXEfEhlzB/8hYhroCCT68BIH+ZAASWmprJ6dNDPDHFLmSZsRjvHpEnV+YP699HRMTdiPA70UJDUZv/dYS7SZS0lCSgNHScy",
+              "name": "BERT_Agent",
+              "response": {
+                "result": "Based on the BERT analysis of the article regarding the Menai Strait Bridge (Menai Suspension Bridge), the truthfulness probabilities are as follows:\n\n*   **False:** 20.95%\n*   **Mostly-true:** 20.05%\n*   **Pants-fire (Entirely False):** 17.40%\n*   **Barely-true:** 17.17%\n*   **Half-true:** 15.74%\n*   **True:** 8.68%\n\n**Summary:**\nThe model indicates a high level of skepticism, with the highest single probability assigned to the **\"False\"** category. When combining the negative classifications (False, Pants-fire, and Barely-true), there is a roughly **55.5%** probability that the content contains significant inaccuracies or is outright false. The probability of the article being completely \"True\" is quite low at **8.68%**."
+              }
+            },
+            "kind": "data",
+            "metadata": {
+              "adk_type": "function_response"
+            }
+          },
+          {
+            "data": {
+              "id": "call_38214f084dc04b38b2a1dfa3ddcd",
+              "name": "Political_Bias_Agent",
+              "response": {
+                "result": "The analysis of the article regarding the Menai Strait Bridge indicates a **low statistical density (0)**, suggesting a narrative focus rather than a data-driven approach. \n\nIn terms of partisan framing, the analysis identified **one conservative talking point** and **zero liberal talking points**. This suggests the article may lean toward themes such as infrastructure preservation, fiscal responsibility, or traditional engineering significance, though the overall bias remains relatively low."
+              }
+            },
+            "kind": "data",
+            "metadata": {
+              "adk_type": "function_response"
+            }
+          },
+          {
+            "data": {
+              "id": "call_c84db0ca8ea9419c96b241d36f93",
+              "name": "Sensationalism_Agent",
+              "response": {
+                "result": "The emotional intensity score for the Menai Strait Bridge article is 0.0, indicating a neutral and objective tone."
+              }
+            },
+            "kind": "data",
+            "metadata": {
+              "adk_type": "function_response"
+            }
+          },
+          {
+            "data": {
+              "id": "call_82c47c827990450299b872dc958e",
+              "name": "Spam_Agent",
+              "response": {
+                "result": "The Menai Strait Bridge article shows a very low probability (approximately 6.6%) of having bot-like characteristics. The content appears to be human-generated."
+              }
+            },
+            "kind": "data",
+            "metadata": {
+              "adk_type": "function_response"
+            }
+          },
+          {
+            "data": {
+              "id": "call_644e27b0bde24aabbfa5da8e65b3",
+              "name": "Web_Search_Agent",
+              "response": {
+                "result": "The **Menai Suspension Bridge**, designed by Thomas Telford, was officially opened on **January 30, 1826**. This makes **January 30, 2026**, its 200th anniversary.\n\n### Key Facts about the Construction and Opening:\n*   **Designer:** Thomas Telford, the first President of the Institution of Civil Engineers.\n*   **Construction Period:** Work began in **1819** and took seven years to complete.\n*   **Engineering Milestone:** At the time of its completion, it was the **longest suspension bridge in the world**, spanning 580 feet (176 meters) between the main piers.\n*   **Opening Day:** On January 30, 1826, the Holyhead mail coach crossed the bridge for the first time, signaling a major improvement in travel between London and Holyhead (and subsequently to Dublin).\n*   **Materials:** The bridge used 16 massive chain cables made of wrought iron to support the wooden deck.\n\n### 200th Anniversary (Bicentenary) Plans:\nLocal heritage groups and engineering institutions are preparing for the bicentenary in **2026**. Notable organizations involved include:\n*   **Menai Heritage:** A community heritage trust that runs a museum in Menai Bridge specifically dedicated to Telford\u2019s bridge and the Britannia Bridge.\n*   **Restoration Efforts:** In recent years, the bridge has undergone significant maintenance, including the replacement of hangers and repainting, to ensure it remains functional for its 200th year and beyond.\n\nThe bridge remains a Grade I listed structure and is currently a candidate for **UNESCO World Heritage** status as part of the \"The Menai Strait and its Bridges\" proposal."
+              }
+            },
+            "kind": "data",
+            "metadata": {
+              "adk_type": "function_response"
+            }
+          }
+        ],
+        "role": "agent"
+      },
+      {
+        "kind": "message",
+        "messageId": "0a5cb4e2-12fc-4ff8-a215-ebfd861ac8f9",
+        "parts": [
+          {
+            "kind": "text",
+            "text": "```json\n{\n  \"veracity_label\": \"Mostly True\",\n  \"explanation_text\": \"The article accurately describes the historical significance, location, purpose, and designer of the Menai Strait Bridge. However, it contains some chronological inaccuracies: construction actually began in 1819, not 1826 (1826 was the year it opened), and its 200th anniversary occurs in 2026, which the article presents in the past tense ('celebrated'). Furthermore, the central span of the bridge is 580 feet, although the total length approaches the 1,368 feet mentioned.\",\n  \"factor_scores\": [\n    {\n      \"factor\": \"Authenticity\",\n      \"score\": 7,\n      \"reasoning\": \"Contains verifiable historical facts, geographical locations, and accurate quotes from named engineers, though it contains minor date/event confusion (stating construction started in 1826 rather than opened in 1826).\"\n    },\n    {\n      \"factor\": \"Sensationalism\",\n      \"score\": 2,\n      \"reasoning\": \"The emotional intensity score is 0.0. The text uses some engaging language ('absolutely bonkers', 'vision of the future') but remains overwhelmingly educational and objective.\"\n    },\n    {\n      \"factor\": \"Political Bias\",\n      \"score\": 1,\n      \"reasoning\": \"The analysis detected one conservative talking point (likely related to infrastructure/fiscal history) and zero liberal points. The framing is entirely historical and non-partisan.\"\n    },\n    {\n      \"factor\": \"Spam\",\n      \"score\": 1,\n      \"reasoning\": \"Spam likelihood is evaluated at roughly 6.6%. The content is highly specific, well-written, and reads like a standard history or travel journalism piece rather than bot-generated spam.\"\n    },\n    {\n      \"factor\": \"Confirmation Bias\",\n      \"score\": 2,\n      \"reasoning\": \"There is no evidence of cherry-picked facts to support a specific ideological agenda. The historical narrative provides standard context for the bridge's creation.\"\n    },\n    {\n      \"factor\": \"Short-Term Utility\",\n      \"score\": 2,\n      \"reasoning\": \"The article does not exhibit clickbait characteristics or aggressive monetization cues. It is a straightforward historical feature.\"\n    }\n  ]\n}\n```"
+          }
+        ],
+        "role": "agent"
+      }
+    ],
+    "id": "776c7435-a8a9-406b-b6a4-57f1a5a935f1",
+    "kind": "task",
+    "metadata": {
+      "adk_app_name": "FactCheck_Manager",
+      "adk_user_id": "A2A_USER_3cc39834-7393-4a63-b4e6-3e94cb460af1",
+      "adk_session_id": "3cc39834-7393-4a63-b4e6-3e94cb460af1",
+      "adk_invocation_id": "e-52dc79b9-c731-4591-b501-26518b1cc4d2",
+      "adk_author": "FactCheck_Manager",
+      "adk_event_id": "8a287ff8-2aba-43cd-b1f4-e5a1efdd2d27",
+      "adk_usage_metadata": {
+        "cachedContentTokenCount": 0,
+        "candidatesTokenCount": 1063,
+        "promptTokenCount": 2617,
+        "totalTokenCount": 3680
+      },
+      "adk_actions": {
+        "stateDelta": {},
+        "artifactDelta": {},
+        "requestedAuthConfigs": {},
+        "requestedToolConfirmations": {}
+      }
+    },
+    "status": {
+      "state": "completed",
+      "timestamp": "2026-03-09T23:27:41.813371+00:00"
+    }
+  }
+}
