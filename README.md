@@ -76,7 +76,9 @@ depending on prompting strategies
 To reproduce the code, you will need to install the python packages in `req.txt` by changing directories to this repository and running in your terminal:  
 ```
   pip install -r req.txt
-```  
+  pip install "google-adk[extensions]"
+  pip install --upgrade "a2a-sdk[http-server]"
+```
 **Note:** This is assuming you do not have a CUDA runtime installed, and will only utilize the CPU for computations. To install the CUDA-compatible versions, uninstall PyTorch and install the version corresponding to your CUDA version on [PyTorch's website](https://pytorch.org/get-started/locally/)  
 
 You'll also need to download [this pretrained model](https://drive.google.com/file/d/1TE7gZblTT_pIVPH00dKf4-SrObbIcKV0/view?usp=sharing) and have it in a folder called "checkpoints." This was not included in our repository due to its size, and it would be necessary to include this folder in your `.gitignore`. Additionally, you would need a `config.yaml` file included in the main repository that follows this structure:  
