@@ -100,3 +100,8 @@ vertex:
 * After installing all necessary packages, navigate to `notebooks/agent_website.ipynb`
 * Run all cells
 * In the last cell, a local link will appear. Follow the link to get to the demo website and paste an article in!
+
+## Project Context
+This project is an implementation/extension of the **Alternus Vera Research Project** supervised by **Dr. Ali Arsanjani**. It focuses on the **AI4Good** mission of identifying and mitigating digital misinformation and disinformation through advanced techniques such as **Veracity Vectors** and **Truthness Tensors**.
+
+For more details on the core methodology, visit [Alternus Vera](https://alternusvera.com) or the [AI4Good Core Repository](https://github.com/chriss-mo/ai4good).
